@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>color changing cirlce</title>
+
+	<style type="text/css">
+
+		#circle{
+			width: 500px;
+			height: 500px;
+			background-color: rgb(85,107,47);
+			border-radius: 50%;
+			position: fixed;
+			left: 30%;
+			top: 22%;
+
+		}
+	
+
+
+	</style>
+
+
+</head>
+<body>
+	
+	<div id="circle"></div>
+
+
+	<script type="text/javascript">
+	
+	var box = document.getElementById("circle")
+	box.style.backgroundcolor = "rgb(85,107,47)";
+
+		document.addEventListener(
+			"click", function(event){
+				console.log(event.clientX, event.clientY);
+				circle.style.backgroundColor = "rgb("+ event.clientX + "," + event.clientY + "," + 0 + ")"
+			}
+
+			)
+
+	</script>
+
+
+
+</body>
+
+
+
+</html>

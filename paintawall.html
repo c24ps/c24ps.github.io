@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <title></title>
+    <style type="text/css">
+    #red {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        /*			position:absolute;
+*/
+    }
+​
+​
+    #blue {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: absolute;
+        /*			position:absolute;
+*/
+    }
+    </style>
+</head>
+​
+<body>
+    <div id="blue"></div>
+    <div id="red"></div>
+    <script type="text/javascript">
+    var color;
+​
+    var blueSquare = document.getElementById('blue');
+​
+​
+    var redSquare = document.getElementById('red');
+​
+    blueSquare.addEventListener("click", function() {
+        color = "blue"
+        console.log(color)
+    })
+​
+    redSquare.addEventListener("click", function() {
+        color = "red"
+    })
+    document.addEventListener("mousemove", function(event) {
+        console.log(event)
+        var square = document.createElement("div");
+        document.body.appendChild(square);
+        square.style.width = "50px";
+        square.style.height = "50px";
+        square.style.backgroundColor = color;
+​
+​
+        square.style.top = event.clientY - 25 + "px";
+        square.style.left = event.clientX - 25 + "px";
+​
+    })
+    </script>
+</body>
+​
+</html>

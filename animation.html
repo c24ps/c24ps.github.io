@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>animation</title>
+
+
+<style type="text/css">
+	
+	#p{
+		width:100px;
+		height:100px;
+		background-color:orange;
+		animation-name:sun;
+		animation-duration: 2s;
+		animation-iteration-count:infinite;
+	}
+
+
+	@keyframes sun{
+
+		0%{
+			border-radius: 0%;
+		}
+
+		50%{
+			border-radius: 50%
+			background-color: lightblue;
+		}
+
+		100%{
+			border-radius: 0%
+			background-color: orange;
+		}
+	}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+	
+
+
+	<div id = "p"></div>
+
+</body>
+
+</html>
