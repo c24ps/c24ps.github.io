@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>dinner</title>
+    <style type="text/css">
+    
+
+    #picture {
+        width: 400px;
+        height: 400px;
+        transition:0.5s;
+
+
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    body{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 22;
+        color: orange;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Click to find out what is for dinner:</h1>
+        <div id="picture"></div>
+        <script type="text/javascript">
+        var foods = ["url(https://www.foodiecrush.com/wp-content/uploads/2019/05/Grilled-Salmon-foodiecrush.com-023.jpg)", 
+        // "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_e_CRh21r_PAMLCsWJCNJWXwGmVLrngpvO-g&usqp=CAU)", 
+       "url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sushi-vs-sashimi-sushi-rolls-1613088021.jpg?crop=1xw:1xh;center,top&resize=480:*)",
+        "url(https://media1.s-nbcnews.com/i/newscms/2018_07/1318715/grilled-steak-today-tease-180216_89508b219dd455b4d43311782841f938.jpg)", 
+        "url(https://ministryofcurry.com/wp-content/uploads/2018/07/Pasta-with-Creamy-Tomato-Sauce-1.jpg)",
+        "url(https://www.dinneratthezoo.com/wp-content/uploads/2018/01/baked-lemon-chicken-3.jpg)",
+        "url(https://media.timeout.com/images/102421929/630/472/image.jpg)",
+        "url(https://feelgoodfoodie.net/wp-content/uploads/2020/04/Caesar-Salad-6.jpg)",
+        "url(https://www.jessicagavin.com/wp-content/uploads/2020/03/how-to-cook-shrimp-10-1200.jpg)",
+        "url(https://www.noracooks.com/wp-content/uploads/2019/01/IMG_2661.jpg)"];
+        // , 
+
+        // "yellow", "lightgreen", "red"];
+
+        var box = document.getElementById('picture');
+
+
+        box.addEventListener("click", function() {
+            var random = Math.floor(9*Math.random());
+            console.log(foods[random])
+            box.style.backgroundImage = foods[random];
+        })
+
+        </script>
+    </center>
+</body>
+
+</html>
+
+        </script>
+    </center>
+</body>
+
+</html>
