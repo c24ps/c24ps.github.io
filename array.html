@@ -53,12 +53,44 @@
 
 
         box.addEventListener("click", function() {
-            var random = Math.floor(9*Math.random());
+            // var random = Math.floor(9*Math.random());
+            var random = Math.round(9*Math.random());
             console.log(foods[random])
             box.style.backgroundImage = foods[random];
-        })
+        
 
+        if (random == 0) {
+            box.innerText = "salmon";
+            }
+
+        else if (random == 1) {
+            box.innerText = "sushi"
+        }
+
+        else if (random == 2) {
+            box.innerText = "steak"
+        }
+
+        else if (random == 3) {
+           box.innerText = "pasta";
+           // document.style.font-size = 12;
+            } 
+
+        else if (random == 4) {
+            box.innerText = "chicken";
+            // document.style.font-size = 12;
+            }
+
+        else if (random == 5) {
+            box.innerText = "ceaser salad";
+            // document.style.font-size = 12;
+            }
+
+
+
+        })
         </script>
+    
     </center>
 </body>
 

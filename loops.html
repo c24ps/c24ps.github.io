@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+<style type="text/css">
+	.cookies {
+		height: 100px;
+		width: 200px;
+		margin: 5px;
+		display: inline-block;
+
+		color: rgb(100,149,237);
+		font-size: 17px;
+
+		background-color: white;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7jxN4npkuDnXKR4DJvZ4908wCQ2Hobq6SmmCxoAUq-K6AnBrsovS63DIF9OtJ4Qxjp0g&usqp=CAU);
+		/*background-image: url(https://kirbiecravings.com/wp-content/uploads/2017/02/levain-bakery-copycat-chocolate-chip-cookies-8-700x786.jpg);*/
+		}
+
+	body{
+		color: rgb(100,149,237);
+		font-size: 25px;
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+	<center><h1>BEN AND JERRY'S ICE CREAM TIMER!</h1></center>
+
+	<script type="text/javascript">
+		
+		function makeCookie (x) {
+			var cookie = document.createElement('div');
+			cookie.classList.add('cookies');
+			document.body.appendChild(cookie)
+
+			cookie.innerText = x;
+		}
+
+	// setInterval(makeCookie, 1000)
+	for (var i=0; i<820; i = i+20){makeCookie(i)}
+
+	</script>
+
+</body>
+
+
+</html>

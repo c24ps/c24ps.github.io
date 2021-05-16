@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Happy Fathers Day!</title>
+    <style type="text/css">
+    
+
+    #picture {
+        width: 400px;
+        height: 400px;
+        transition:0.5s;
+
+
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+    body{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 22;
+        color: rgb(102, 153, 153);
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>HAPPY FATHERS DAY DAD! I LOVE YOU to the moon and back <3</h1>
+        <h2>Click to shuffle some of your favorite songs:</h2>
+        <div id="picture"></div>
+
+
+        <audio id = "tinydancer" src="tinydancer.mp3"></audio>
+        <audio id = "shotthroughtheheart" src="shotthroughtheheart.mp3"></audio>
+        <audio id = "livingonaprayer" src="livingonaprayer.mp3"></audio>
+        <audio id = "rikki" src="rikki.mp3"></audio>
+        <audio id = "kidcharlemagne" src="kidcharlemagne.mp3"></audio>
+        <audio id = "returntosender" src="returntosender.mp3"></audio>
+        <audio id = "canthelpfallinginlove" src="canthelpfallinginlove.mp3"></audio>
+        <audio id = "pianoman" src="pianoman.mp3"></audio>
+        <audio id = "vienna" src="vienna.mp3"></audio>
+        <audio id = "stronger" src="stronger.mp3"></audio>
+
+
+
+        <script type="text/javascript">
+
+
+        var songs = ["url(https://upload.wikimedia.org/wikipedia/en/3/37/Elton_John_Tiny_Dancer.jpg)", "url(https://upload.wikimedia.org/wikipedia/en/2/2b/Bon_Jovi_Album.jpg", "url(https://upload.wikimedia.org/wikipedia/en/a/ab/Bon_jovi_slippery_when_wet.jpg)", "url(https://upload.wikimedia.org/wikipedia/en/e/ef/Rikki_Don%27t_Lose_That_Number_-_Steely_Dan.jpg)", "url(http://images.genius.com/e6bc250243d9a7b6bb21518e9ed63f6f.1000x1000x1.jpg)", "url(https://cdns-images.dzcdn.net/images/cover/fd8772c7b7e2c1bde202c0256e0e85e7/500x500.jpg)", "url(https://i.pinimg.com/564x/51/03/ca/5103caa6566dae3b27561f48cb653266.jpg)", "url(https://upload.wikimedia.org/wikipedia/en/9/98/Billy_Joel_Piano_Man_single.jpg)", "url(https://images-na.ssl-images-amazon.com/images/I/81vbrv5cyhL._SL1500_.jpg)", "url(https://direct.rhapsody.com/imageserver/images/alb.185403630/500x500.jpg)"];
+
+        var audio = document.getElementById('tinydancer');
+        var audio1 = document.getElementById('shotthroughtheheart');
+        var audio2 = document.getElementById('livingonaprayer');
+        var audio3 = document.getElementById('rikki');
+        var audio4 = document.getElementById('kidcharlemagne');
+        var audio5 = document.getElementById('returntosender');
+        var audio6 = document.getElementById('canthelpfallinginlove');
+        var audio7 = document.getElementById('pianoman');
+        var audio8 = document.getElementById('vienna');
+        var audio9 = document.getElementById('stronger');
+
+
+        // 1. tiny dancer - elton jon   2. shot through the heart - bon jovi   3. living on a prayer - bon jovi   4. rikki don't loose that number - steely dan   5. kid charlemagne - steely dan  6. return to sender - elvis   7. i cant help falling in love - elvis   8. piano man - billy joel   9. vienna - billy joel   10. stronger - finding neverland   11. ----
+
+
+
+        var box = document.getElementById('picture');
+
+
+        box.addEventListener("click", function() {
+            // var random = Math.floor(9*Math.random());
+            var random = Math.round(9*Math.random());
+            console.log(songs[random])
+            box.style.backgroundImage = songs[random];
+        
+
+        if (random == 0) {
+                audio.play();
+                audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 1) {
+                audio1.play();
+                audio.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 2) {
+                audio2.play();
+                audio.pause(); audio1.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 3) {
+                audio3.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 4) {
+                audio4.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 5) {
+                audio5.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio6.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 6) {
+                audio6.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio7.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 7) {
+                audio7.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio8.pause(); audio9.pause();
+                }
+
+        else if (random == 8) {
+                audio8.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio9.pause();
+                }
+
+        else if (random == 9) {
+                audio9.play();
+                audio.pause(); audio1.pause(); audio2.pause(); audio3.pause(); audio4.pause(); audio5.pause(); audio6.pause(); audio7.pause(); audio8.pause();
+                }
+    })
+
+
+        </script>
+    
+    </center>
+</body>
+
+</html>
+
+        </script>
+    </center>
+</body>
+
+</html>
