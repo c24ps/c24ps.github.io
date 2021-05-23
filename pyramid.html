@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<title>steinman family pyramid</title>
+
+	<style type="text/css">
+
+		h1{
+			color: grey;
+			font-family:'Playfair Display', serif;
+			font-size: 42;
+		}
+
+		.pyramid{
+			width:200px;
+			height:200px;
+			border:1px solid black;}
+
+		#pyramidr1{
+			position: absolute;
+			top: 100px;
+			left: 500px;}
+
+		#pyramidr2{
+			position: absolute;
+			top: 300px;
+			left: 400px;}
+
+		#pyramidr22{
+			position: absolute;
+			top: 300px;
+			left: 600px;}
+
+		#pyramidr3{
+			position: absolute;
+			top: 500px;
+			left: 300px;}
+
+		#pyramidr32{
+			position: absolute;
+			top: 500px;
+			left: 500px;}
+
+		#pyramidr33{
+			position: absolute;
+			top: 500px;
+			left: 700px;}
+
+		.family{
+			 width: 100px;
+        	height: 100px;
+        	background-size: contain;
+        	background-repeat: no-repeat;
+        	display: inline-block;
+       		position: relative;}
+
+
+		#paulina{
+			background-image: url(paulina.png);
+			background-color: lightblue;
+
+			color: grey;
+			height: 50px;
+			width: 50px;}
+
+		#lucy{
+			background-image: url(lucy.png);
+			background-color: pink;
+
+			color: grey;
+			height: 50px;
+			width: 50px;}
+
+		#hilary{
+			background-image: url(hilary.png);
+			background-color: red;
+
+			color: grey;
+			height: 50px;
+			width: 50px;}
+
+		#rob{
+			background-image: url(rob.png);
+			background-color: blue;
+
+			color: grey;
+			height: 50px;
+			width: 50px;}
+	</style>
+</head>
+
+
+<body>
+	<!-- THE STEINMAN FAMILY PYRAMID -->
+	<h1>Click on a family member and drag them into the pyramid:</h1>
+
+	<div class="pyramid" id="pyramidr1"></div>
+	<div class="pyramid" id="pyramidr2"></div>
+	<div class="pyramid" id="pyramidr22"></div>
+	<div class="pyramid" id="pyramidr22"></div>
+	<div class="pyramid" id="pyramidr3"></div>
+	<div class="pyramid" id="pyramidr32"></div>
+	<div class="pyramid" id="pyramidr33"></div>
+	<br></br>
+	<div class="family" id="paulina">paulina</div>
+	<div class="family" id="lucy">lucy</div>
+	<div class="family" id="hilary">hilary</div>
+	<div class="family" id="rob">rob</div>
+
+
+ <script type="text/javascript">
+    var image;
+
+
+CHANGE THIS
+
+    function makeDecision() {
+        var member = document.createElement("member");
+        // var angle = Math.floor((Math.random() * 360) + 1);
+        member.style.width = "100px";
+        member.style.height = "100px";
+        member.style.borderRadius = "50%";
+        member.style.position = "absolute";
+        member.style.backgroundImage = "url(" + image + ")";
+        member.style.backgroundSize = "cover";
+        // pepp.style.transform = "rotate("
+        // + angle + "deg)";
+
+
+        pyramid.addEventListener("mousemove", function(event) {
+            console.log(event) });
+
+
+        pyramid.appendChild(member);
+
+        member.style.left = event.clientX - 50 + "px";
+        member.style.top = event.clientY - 50 + "px";
+    };
+
+    paulina.addEventListener("click", function() {
+        image = "paulina.png" });
+
+    lucy.addEventListener("click", function() {
+        image = "lucy.png" });
+
+
+    hilary.addEventListener("click", function() {
+		image = "hilary.png" });
+
+
+    rob.addEventListener("click", function() {
+        image = "rob.png" });
+
+
+    pyramid.addEventListener("click", makeDecision);
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
