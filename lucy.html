@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>lucy's random dinner generator</title>
+    <style type="text/css">
+    
+
+    #picture {
+        width: 400px;
+        height: 400px;
+        transition:0.5s;
+
+
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    body{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 22;
+        color: orange;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Click to find out what Lucy is having for dinner:</h1>
+        <div id="picture"></div>
+        <script type="text/javascript">
+        var foods = ["url(https://glutenfreecuppatea.co.uk/wp-content/uploads/2020/11/air-fryer-chicken-tenders-recipe-featured-720x720.jpg)", "url(https://thumbor.thedailymeal.com/e60rilsJbzvVYFFI7y1BJXM6OrA=//https://www.thedailymeal.com/sites/default/files/2019/08/07/iStock-527477837_1_.jpg)", "url(https://www.foodiecrush.com/wp-content/uploads/2017/10/Instant-Pot-Macaroni-and-Cheese-foodiecrush.com-019.jpg)", "url(https://cielitolindoreno.com/wp-content/uploads/2018/09/KIDS_CHESSE_QUESADILLA.jpg)", "url(https://infatuation.s3.amazonaws.com/media/images/guides/best-pizza-nyc/patsys%20pic%20edited.jpg)", "url(https://hips.hearstapps.com/delish/assets/18/08/1519155106-flank-steak-horizontal.jpg)"];
+
+        // "chick nuggets", "fries", "mac and cheese", "quesidilla", "pizza", "steak"];
+
+        var box = document.getElementById('picture');
+
+
+        box.addEventListener("click", function() {
+            // var random = Math.floor(5*Math.random());
+            var random = Math.round(5*Math.random());
+            console.log(foods[random])
+            box.style.backgroundImage = foods[random];
+
+        })
+        </script>
+    
+    </center>
+</body>
+
+</html>
+
+        </script>
+    </center>
+</body>
+
+</html>
